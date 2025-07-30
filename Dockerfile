@@ -14,7 +14,7 @@
 
 ARG DOCKER_ORG="usdotfhwastoldev"
 ARG DOCKER_TAG="develop-humble"
-FROM ${DOCKER_ORG}/carma-base:${DOCKER_TAG} as base_image
+FROM ${DOCKER_ORG}/carma-test:${DOCKER_TAG} as base_image
 COPY --chown=carma . /home/carma/src/
 
 FROM base_image as setup
